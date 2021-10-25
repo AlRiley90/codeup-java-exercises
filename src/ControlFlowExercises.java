@@ -26,13 +26,16 @@ public class ControlFlowExercises {
 //        }
         int f = 1;
         while(f <= 100){
-            System.out.println(f);
-            f++;
             if(f % 3==0 && f % 5 != 0){
                 System.out.println("Fizz");
             }else if(f % 5 == 0 && f % 3 != 0){
                 System.out.println("Buzz");
+            }else if(f % 3 == 0 && f % 5 ==0){
+                System.out.println("FizzBuzz");
+            }else{
+                System.out.println(f);
             }
+            f++;
         }
     }
 }
