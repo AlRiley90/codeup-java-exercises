@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import static java.lang.Integer.parseInt;
 
 public class ControlFlowExercises {
     public static void main(String[] args) {
@@ -40,26 +40,46 @@ public class ControlFlowExercises {
 //            f++;
 //        }
 
+        //Table of powers
+//        String continuing = null;
+//        do {
+//            System.out.println("What number would you like to go up to? ");
+//            int userInput = scanner.nextInt();
+//            if (userInput > 0) {
+//                System.out.println("number | squared | cubed");
+//                System.out.println("------ | ------ | ------ ");
+//                for (int i = 1; i <= userInput; i++) {
+//                    int number = i;
+//                    int squared = i * i;
+//                    int cubed = i * i * i;
+//                    System.out.printf("%-7d|", number);
+//                    System.out.printf("%-8d|", squared);
+//                    System.out.printf("%d%n", cubed);
+//                }
+//                System.out.println("Do you want to continue? Y/N");
+//                continuing = scanner.next();
+//            }
+//
+//        } while (continuing.equalsIgnoreCase("Y"));
 
-        String continuing = null;
+
+        String doContinue = "Y";
         do {
-            System.out.println("What number would you like to go up to? ");
-            int userInput = scanner.nextInt();
-            if (userInput > 0) {
-                System.out.println("number | squared | cubed");
-                System.out.println("------ | ------ | ------ ");
-                for (int i = 1; i <= userInput; i++) {
-                    int number = i;
-                    int squared = i * i;
-                    int cubed = i * i * i;
-                    System.out.printf("%-7d|", number);
-                    System.out.printf("%-8d|", squared);
-                    System.out.printf("%d%n", cubed);
-                }
-                System.out.println("Do you want to continue? Y/N");
-                continuing = scanner.next();
+            System.out.println("What grade did you get? ");
+            int userGrade = scanner.nextInt();
+            if (userGrade <= 100 && userGrade >= 88) {
+                System.out.printf("You got an A%n");
+            }else if(userGrade <= 87 && userGrade >= 80){
+                System.out.printf("You got a B%n");
+            }else if(userGrade <= 79 && userGrade >= 67){
+                System.out.printf("You got a C%n");
+            }else if(userGrade <= 66 && userGrade >= 60){
+                System.out.printf("You got a D%n");
+            }else{
+                System.out.printf("You got an F%n");
             }
-
-        } while (continuing.equalsIgnoreCase("Y"));
+            System.out.println("Would you like to enter another grade? Y/N ");
+            doContinue = scanner.next();
+        }while(doContinue.equalsIgnoreCase("Y"));
     }
 }
