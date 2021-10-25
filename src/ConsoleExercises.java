@@ -9,7 +9,7 @@ public class ConsoleExercises {
 
         double pi = 3.14159;
         System.out.print("The value of pi is approximately: ");
-        System.out.format("%.2f%n", pi);
+        System.out.format("%.2f%n", pi); //%.2f formats the decimal, while %n creates a new line for the next entry
 
 //        System.out.print("Enter an integer: ");
 //        int userInput = scanner.nextInt();
@@ -37,5 +37,8 @@ public class ConsoleExercises {
         int area = roomL * roomW;
         int perimeter = (roomL*2) + (roomW*2);
         System.out.printf("The perimeter of the room is: %s ft" ,perimeter);
+
+
+
     }
 }
