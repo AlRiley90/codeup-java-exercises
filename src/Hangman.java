@@ -12,15 +12,7 @@ public class Hangman {
         System.out.printf("\n\n\n\n\n\n\n\n\n\n\n");
 
         char splicedWord[] = theWord.toCharArray();
-//        System.out.println(splicedWord);
-//        int wordLength = theWord.length();
-//        String revealedWord = "";
-//        String dash = "_";
-//        for(char i = 0; i<wordLength; i++){
-//            String theAnswer =  revealedWord + dash;
-//        }
-//        String theAnswer =  revealedWord + dash;
-//        System.out.println(theAnswer);
+//
         for(char i = 0; i<splicedWord.length; i++ ){
             splicedWord[i] = '_';
 //            System.out.println(splicedWord);
@@ -30,8 +22,10 @@ public class Hangman {
 
         System.out.println("Player 2, guess a letter");
         String guess = scanner.next();
+        char userGuess[] = guess.toCharArray();
         if(theWord.contains(guess)){
-//            splicedWord.replace('_', guess);
+
+           //splicedWord.replace('_', guess);
         }
 
     }
