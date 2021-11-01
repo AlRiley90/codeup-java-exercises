@@ -12,7 +12,7 @@ public class Input {
         this.scanner = new Scanner(System.in);
 
     }
-    String getString(){
+    public String getString(){
         return this.scanner.nextLine();
     }
     boolean yesNo(){

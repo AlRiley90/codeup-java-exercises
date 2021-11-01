@@ -1,6 +1,8 @@
+package Hangman;
+
 import java.util.Scanner;
 
-public class Hangman {
+public class TheGame {
     public Scanner scanner;
 
     String wordSelector() {
