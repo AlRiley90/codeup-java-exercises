@@ -1,8 +1,20 @@
 public class Person {
     private String name;
+    protected int age;
+    //Added public name for the sake of inheritance lecture
+//    public String name;
+
+    //This is the default constructor used to eliminate error for employee to extend person
+    public Person(){};
+
 
     public Person(String name) {
         this.name = name;
+    }
+
+    public Person(String name, int age){
+        this.name = name;
+        this.age = age;
     }
 
     public static void main(String[] args) {
@@ -40,7 +52,7 @@ public class Person {
 //TODO: change the name property to the passed value
     }
     public void sayHello(){
-        System.out.println("Hello " + getName());
+        System.out.println("Hello " + name);
 //TODO: print a message to the console using the person's name
     }
 }
