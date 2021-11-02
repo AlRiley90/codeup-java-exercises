@@ -21,27 +21,33 @@ public class MoviesApplication {
                 break;
             case "2":
                 System.out.println("Viewing anime movies: ");
-                Movie.displayAnime(Movie.getAnime(moviesArr));
+//                Movie.displayAnime(Movie.getAnime(moviesArr));
+                Movie.viewMoviesCategory("animated");
                 break;
             case "3":
                 System.out.println("Viewing all drama movies: ");
-                Movie.displayDrama(Movie.getDrama(moviesArr));
+//                Movie.displayDrama(Movie.getDrama(moviesArr));
+                Movie.viewMoviesCategory("drama");
                 break;
             case "4":
                 System.out.println("Viewing all horror movies: ");
-                Movie.displayHorror(Movie.getHorror(moviesArr));
+//                Movie.displayHorror(Movie.getHorror(moviesArr));
+                Movie.viewMoviesCategory("horror");
                 break;
             case "5":
                 System.out.println("Viewing all scifi movies: ");
-                Movie.displayScifi(Movie.getScifi(moviesArr));
+//                Movie.displayScifi(Movie.getScifi(moviesArr));
+                Movie.viewMoviesCategory("scifi");
                 break;
             case "6":
                 System.out.println("Viewing all comedies: ");
-                Movie.displayComedy(Movie.getComedy(moviesArr));
+//                Movie.displayComedy(Movie.getComedy(moviesArr));
+                Movie.viewMoviesCategory("comedy");
                 break;
             case "7":
                 System.out.println("Viewing all musicals: ");
-                Movie.displayMusical(Movie.getMusical(moviesArr));
+//                Movie.displayMusical(Movie.getMusical(moviesArr));
+                Movie.viewMoviesCategory("musical");
                 break;
         }
 

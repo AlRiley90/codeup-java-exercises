@@ -19,7 +19,7 @@ public class SinglePlayerMode {
         return splicedWord;
     }
 
-    public static char playerGuess(char input){
-        if(input )
-    }
+//    public static char playerGuess(char input){
+//        if(input )
+//    }
 }
