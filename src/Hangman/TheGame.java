@@ -13,21 +13,6 @@ public class TheGame {
 //        return theWord;
 //    }
 
-//
-//        for(char i = 0; i<splicedWord.length; i++ ){
-//            splicedWord[i] = '_';
-////            System.out.println(splicedWord);
-//        }
-
-
-
-//        System.out.println("Player 2, guess a letter");
-//        String guess = scanner.next();
-//        char userGuess[] = guess.toCharArray();
-//        if(theWord.contains(guess)){
-//
-//           //splicedWord.replace('_', guess);
-//        }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -40,10 +25,12 @@ public class TheGame {
         System.out.println("1 - to play single player mode \n2 - to play two player mode. Enter your choice: ");
         String players = scanner.nextLine();
         if(players.equals("1")){
-            SinglePlayerMode.wordSelector(WordsArray.words);
-            SinglePlayerMode.wordSplicer(SinglePlayerMode.wordSelector(WordsArray.words));
+//            SinglePlayerMode.wordSelector(WordsArray.words);
+            String theMagicWord = SinglePlayerMode.wordSelector(WordsArray.words);
+            char[] splicedWord = SinglePlayerMode.wordSplicer(theMagicWord);
             System.out.println("Guess a letter");
-
+            String playerGuess = scanner.next();
+            SinglePlayerMode.comparePlayerGuess(playerGuess, theMagicWord, splicedWord);
         }
 
     }
