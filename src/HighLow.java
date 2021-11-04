@@ -24,7 +24,7 @@ public class HighLow {
                 System.out.println("That number is too high. Remember the rules!");
                 continue;
             } else if (userGuess < 1) {
-                System.out.println("That number is too low. Rmemeber the rules");
+                System.out.println("That number is too low. Remember the rules");
                 continue;
             } else if (userGuess == theNumber) {
                 System.out.println("GOOD GUESS! YOU WIN!");

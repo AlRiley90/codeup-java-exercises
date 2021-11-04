@@ -1,6 +1,6 @@
 public class Person {
     private String name;
-    protected int age;
+    public int age;
     //Added public name for the sake of inheritance lecture
 //    public String name;
 

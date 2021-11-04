@@ -30,7 +30,7 @@ public class ArraysExercises {
         for(Person family : people){
             System.out.println(family.getName());
         }
-        System.out.println("With the additional object: ");
+
         Person[] newPeople = addPerson(people, new Person("Ronnie"));
 
         for(Person family : newPeople){
