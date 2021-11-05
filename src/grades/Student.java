@@ -1,6 +1,7 @@
 package grades;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Student {
     private String name;
@@ -15,7 +16,10 @@ public class Student {
         return this.name;
     }
 
-
+//    public String searchStudents(HashMap<String, Student> map, String name){
+//        return "Name: " + map.get(getName()) + " GitHub Username: " + map.get(name) ;
+//
+//    }
 
     public void addGrade(int grade){
         grades.add(grade);
@@ -33,4 +37,6 @@ public class Student {
     public static void main(String[] args) {
 
     }
+
+
 }

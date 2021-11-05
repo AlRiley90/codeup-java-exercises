@@ -34,19 +34,49 @@ public class GradesApplication {
         alex.addGrade(95);
         alex.addGrade(100);
 
-        students.put("AlexKillsCode", alex);
+        students.put("AlexCrushesCode", alex);
         students.put("JimHasMehCode", jim);
         students.put("John404", john);
         students.put("Jane713", jane);
 
         //This method prints all key values
+        boolean keepSearching = true;
         System.out.println(students.keySet());
-        System.out.println("Which student would you like to see more information about?");
+        System.out.println("Which student would you like to see more  information about?");
+
         Scanner scanner = new Scanner(System.in);
         String userSearch = scanner.nextLine();
-        if(students.containsKey(userSearch)){
-            System.out.println();
-        }
+
+        System.out.println(students.get(userSearch));
+
+//        students.getOrDefault("")
+//        System.out.println(alex.searchStudents(students, userSearch));
+        //This way works in the main, working a making a method to call for this
+//        do { System.out.println("Which student would you like to see more information about?");
+
+
+//        Scanner scanner = new Scanner(System.in);
+//        String userSearch = scanner.nextLine();
+//
+//            if (userSearch.equalsIgnoreCase("Jane713")) {
+//                System.out.println("Name: " + jane.getName() + " - GitHub Username: " + userSearch + "\nCurrent Average: " + jane.getGradeAverage());
+//            } else if (userSearch.equalsIgnoreCase("AlexCrushesCode")) {
+//                System.out.println("Name: " + alex.getName() + " - GutHub Username: " + userSearch + "\nCurrent Average: " + alex.getGradeAverage());
+//            } else if (userSearch.equalsIgnoreCase("JimHasMehCode")) {
+//                System.out.println("Name: " + jim.getName() + " - GutHub Username: " + userSearch + "\nCurrent Average: " + jim.getGradeAverage());
+//            } else if (userSearch.equalsIgnoreCase("John404")) {
+//                System.out.println("Name: " + john.getName() + " - GutHub Username: " + userSearch + "\nCurrent Average: " + john.getGradeAverage());
+//            } else {
+//                System.out.println("No users with that username were found.");
+//            }
+//            System.out.println("Would you like to continue?");
+//            String doContinue = scanner.nextLine();
+//            if(doContinue.equalsIgnoreCase("no")){
+//                keepSearching = false;
+//                break;
+//            }
+//        }while(keepSearching == true);
+    }
 
     }
-}
+

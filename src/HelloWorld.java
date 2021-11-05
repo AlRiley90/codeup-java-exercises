@@ -1,5 +1,5 @@
-//public class HelloWorld {
-//    public static void main(String[] args){
+public class HelloWorld{
+    public static void main(String[] args){
 //        System.out.print("Hello,");
 //        System.out.println(" World!");
 //
@@ -23,7 +23,24 @@
 //        y = y - x;
 //        System.out.println(y);
 //
+
+//        String theNumberThree = "three";
+//                Object o = theNumberThree;
+//                int three = (int) o;
 //
-//    }
-//}
+//
+//                int x = 4;
+//                x += 5;
+
+//                int x = 3;
+//                int y = 4;
+//                y *= x;
+//
+//                int x =20;
+//                int y = 2;
+//                x/=y;
+//                y-=x;
+////
+    }
+}
 
