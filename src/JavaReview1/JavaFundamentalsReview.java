@@ -108,7 +108,7 @@ public class JavaFundamentalsReview {
     public static void main(String[] args) {
         System.out.println(Assessment.shout("what"));
 
-        System.out.println(Assessment.removeCats());
+//        System.out.println(Assessment.removeCats());
     }
 
 

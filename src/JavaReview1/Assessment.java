@@ -16,13 +16,13 @@ public class Assessment {
         return word.toUpperCase()+"!!!";
     }
 
-    public static String removeCats() {
-        String[] noCats = null;
-        for (int i = 0; i < AnimalsArray.getAnimals().length; i++) {
-            if (!Objects.equals(AnimalsArray.getAnimals()[i].getSpecies(), "felis catus")) {
-                noCats = AnimalsArray.getAnimals()[i].getName();
-            }
-        }
-        return noCats;
-    }
+//    public static String removeCats() {
+//        String[] noCats = null;
+//        for (int i = 0; i < AnimalsArray.getAnimals().length; i++) {
+//            if (!Objects.equals(AnimalsArray.getAnimals()[i].getSpecies(), "felis catus")) {
+//                noCats = AnimalsArray.getAnimals()[i].getName();
+//            }
+//        }
+//        return noCats;
+//    }
 }
